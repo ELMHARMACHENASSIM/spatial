@@ -1,0 +1,283 @@
+// media query 4k
+@media (min-width: 2560px) {
+  .container {
+    width: 80%;
+  }
+  .heading {
+    h1 {
+      font-size: 60px;
+    }
+    p {
+      font-size: 40px;
+    }
+  }
+  // media query header 4k
+  .header-section {
+    header {
+      .container {
+        .logo {
+          h1 {
+            font-size: 40px;
+            span {
+              font-family: pop-b;
+            }
+          }
+        }
+        .links {
+          ul {
+            li {
+              a {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .main-text {
+      .container {
+        h1 {
+          font-size: 70px;
+        }
+        p {
+          line-height: 80px;
+          font-size: 50px;
+        }
+        a {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+  // media query  text section 4k
+  .text-section {
+    .container {
+      .info-one {
+        h1 {
+          font-size: 70px;
+        }
+        p {
+          opacity: 0.7;
+          font-family: pop-el;
+          font-size: 40px;
+        }
+      }
+      .info-two {
+        p {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  // media query  images section 4k
+  .images-section {
+    .container {
+      .div-card {
+        .txt-card {
+          p {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+    .likns-card {
+      a {
+        font-size: 25px;
+      }
+    }
+  }
+  // media query  cyrcle section 4k
+  .cyrcle-section {
+    margin-top: 70px;
+    .heading-cyrcle {
+      h1 {
+        font-size: 60px;
+      }
+      p {
+        font-size: 40px;
+      }
+    }
+    .container {
+      .main-cyrcls {
+        .cyrcle-div {
+          .cycle-info {
+            h1 {
+              font-size: 40px;
+            }
+            p {
+              font-size: 40px;
+            }
+            span {
+              font-size: 25px;
+              font-family: pop-el;
+            }
+          }
+        }
+      }
+    }
+  }
+  // media query bg section
+  .bg-section {
+    height: 600px;
+    .main-text {
+      .container {
+        h1 {
+          font-size: 60px;
+        }
+        p {
+     
+          font-size: 30px;
+        }
+        a {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  footer{
+    .container{
+       
+        .ft-icons{
+            
+            gap: 50px;
+            i{
+                font-size: 60px;
+                opacity: 0.5;
+            }
+        }
+        .ft-copy{
+         
+            gap: 30px;
+            span{
+             
+                font-size: 20px;
+            }
+        }
+    }
+}
+}
+
+// -------------------------
+
+// media query header
+@media (max-width: 768px) {
+  .header-section {
+    header {
+      width: 100%;
+      height: auto;
+      background-color: $red;
+      .container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+
+        .logo {
+          margin-top: 10px;
+          width: 100%;
+          text-align: center;
+          h1 {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// media query  text section
+@media (max-width: 768px) {
+  .text-section {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    .container {
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      .info-one {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        h1 {
+          font-size: 30px;
+        }
+      }
+      .info-two {
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// media query  images section
+@media (max-width: 768px) {
+  .images-section {
+    .container {
+      flex-direction: column;
+      width: 100%;
+      .div-card {
+        background-color: white;
+        width: 100%;
+        .img-card {
+          width: 100%;
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .likns-card {
+      width: 100%;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+// media query  cyrcle section
+@media (max-width: 768px) {
+  .cyrcle-section {
+    width: 100%;
+    height: auto;
+    .heading-cyrcle {
+      text-align: center;
+    }
+    .container {
+      height: 100%;
+      .main-cyrcls {
+        flex-direction: column;
+        .cyrcle-div {
+          border: 1px solid #0000001c;
+          flex-direction: column;
+          padding: 10px;
+          .cycle-info {
+            text-align: center;
+          }
+          .cycle-info:first-child {
+            text-align: center;
+          }
+        }
+        .div-one {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+}
+
+// media query bg section
+@media (max-width: 768px) {
+}
+
+// media query footer
+@media (max-width: 768px) {
+  footer {
+    .container {
+      .ft-copy {
+        flex-direction: column;
+      }
+    }
+  }
+}
